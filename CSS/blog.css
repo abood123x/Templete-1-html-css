@@ -1,0 +1,682 @@
+/* General */
+
+
+.clear{
+    clear: both;
+}
+
+
+
+
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: montserrat, sans-serif;
+}
+
+
+button{
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+
+.contaner{
+    width: 80%;
+    margin: auto;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+.header .logo {
+    width: 40%;
+}
+
+.header .NavBar {
+    position: absolute;
+    width: 60%;
+    top: 0;
+    right: 100px;
+}
+
+.NavBar ul{
+    list-style-type: none;
+    text-align: right;
+}
+
+.NavBar ul li{
+    display: inline-block;
+    text-align: right;
+}
+
+.NavBar li a{
+    padding: 25px 18px;
+    font-size: 15px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.header .NavBar li a.active:after{
+    width: 100%;
+}
+
+.header .NavBar li a:after {
+   content: "";
+   display: block;
+   width: 0;
+   height: 3px;
+   background-color:#5C94FB;
+   transition: width 0.5s;
+}
+
+.header .NavBar li a:hover:after{
+    width: 100%;
+}
+
+.logo img{
+    width: 100px;
+    margin-top: 9px;
+}
+
+
+
+
+/* beadcrumbs */
+
+
+.beadcrumbs{
+    background-color: #f7f7f7;
+    border: solid 1px #eeeeee;
+    padding: 50px 0;
+    margin-bottom: 40px;
+    position: relative;
+    height: 154px;
+}
+
+
+
+
+.beadcrumbs-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+.beadcrumbs-contant{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+}
+
+
+.container{
+    max-width: 90%;
+    width: 100%;
+    margin: 0 52.475px;
+}
+
+
+.contaner{
+    width: 80%;
+    margin: auto;
+}
+
+
+.beadcrumbs-path span a{
+    color: #5C94FB;
+    text-decoration: none;
+    margin-right: 5px;
+    text-transform: capitalize;
+}
+
+
+.beadcrumbs-path span{
+    text-transform: capitalize;
+}
+
+
+/* blog section */
+
+
+.full-blog{
+    position: relative;
+    width: 80%;
+}
+
+
+
+
+.blog-items{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+
+.blog-item{
+    float: left;
+    width: 60%;
+}
+
+
+.blog-item.a{
+    width: 70%;
+    padding-right: 19px;
+}
+
+
+.blog-item.w{
+    width: 20%;
+}
+
+.blog-img{
+    width: 100%;
+}
+
+
+.blog-list{
+    list-style: none;
+    margin: 20px 0;
+}
+
+
+.blog-list li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+
+
+
+.blog-list li i{
+    color: #5C94FB;
+}
+
+
+.other{
+    width: 20%;
+}
+
+
+.section-header{
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+
+.section-header .section-title{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+.section-header .line{
+    width: 50px;
+    height: 5px;
+    display: block;
+    background-color: #5C94FB;
+    margin:  0 auto 50px 0;
+}
+
+
+.searchform-input {
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #fafafa;
+    border: 2px solid #e8e8e8; /* Define an initial border */
+    transition: border-color 0.3s ease; /* Add a transition for the border color change */
+    outline: none;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    padding-left: 0.8em;
+    padding-right: 30px;
+    margin-bottom: 55px;
+}
+
+
+.searchi{
+    position: absolute;
+    margin: 17px 0px 0px -34px;
+    color: #5C94FB;
+}
+
+
+.searchform-input:focus {
+    border-color: #007bff !important; /* Change border color when input is focused/clicked */
+}
+
+
+/* category section */
+
+
+.grey-line {
+    background-color: rgba(128, 128, 128, 0.2);
+    width: 100%;
+    height: 2px;
+    display: block;
+    margin: 5px 0 9px 0;
+}
+
+
+.paths-title{
+    display: inline;
+    text-transform: capitalize;
+    transition: color 0.5s;
+}
+
+.paths-title:hover{
+    color: #5C94FB;
+}
+
+.paths-pages{
+    float: right;
+    color: #5C94FB;
+    text-decoration: none;
+}
+
+
+/* POPULARE POSTS section */
+
+
+.post-items{
+    margin-bottom: 50px;
+    height: 300px;
+}
+
+
+.post-item{
+    float: left;
+    clear: both;
+    margin-bottom: 40px;
+}
+
+
+.post-img{
+    width: 100px;
+    height: 75px;
+    float: left;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+}
+.post-img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.post-title{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    transition: color 0.5s;
+}
+
+.post-title:hover{
+    color: #5C94FB;
+}
+
+.post-contant{
+    margin-left: 120px;
+    float: left;
+}
+
+
+.post-date{
+    display: block;
+    color: #5C94FB;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+
+/* Tags section */
+
+
+.tags{
+    width: 287px;
+}
+
+
+.tag{
+    padding: 10px;
+    background-color: #eeeeee;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 3px;
+    display: inline-block;
+    transition: background-color 0.5s;
+}
+
+.tag:hover{
+    background-color: #5C94FB;
+}
+
+.tags-list{
+    display: inline-block;
+    padding: 10px;
+    background-color: #eeeeee;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    transition: background-color 0.5s;
+}
+
+.tags-list:hover{
+    background-color: #5C94FB;
+}
+
+
+
+/* blog info section */
+
+
+.blog-info-title{
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.blog-info-par{
+    color: #717172;
+    line-height: 1.7;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+
+.blog-info-tags{
+    margin-bottom: 40px;
+}
+
+
+.blog-info-tags-title{
+    display: inline-block
+}
+
+
+.blog-info-list-tags{
+    display: inline;
+}
+
+
+
+
+.blog-info-list-tags i{
+    color: #5C94FB;
+    transition: color 0.5s;
+}
+
+.blog-info-list-tags:hover.blog-info-list-tags i{
+    color: #717172;
+}
+
+
+/* owner section */
+
+
+.owner-section{
+    width: 100%;
+    border: #e8e8e8 solid 2px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.owner-info {
+    position: absolute;
+    top: 10px;
+    left: 155px;
+    padding: 5px;
+}
+
+.owner-img-elm{
+    width: 150px;
+    padding: 5px;
+}
+
+.owner-title{
+    display: inline;
+    text-transform: uppercase;
+}
+
+.line-owner{
+    margin: 20px 0;
+    width: 99%;
+}
+
+.owner-platforms {
+    float: right;
+    margin: 0 5px;
+    padding: 5px;
+    background-color: #5C94FB;
+    border-radius: 10px;
+    color: white;
+    width: 30px;
+    transition: background-color 0.5s;
+}
+
+.owner-platforms:hover{
+    background-color: #717172;
+    
+}
+
+a.owner-platforms i {
+    margin: 0px 0px 0px 2px;
+}
+
+
+/* comments section */
+
+.comments-title{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.line{
+    width: 50px;
+    height: 5px;
+    display: block;
+    background-color: #5C94FB;
+    margin: 0 auto 50px 0;
+}
+
+.comments-header{
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.comments{
+    padding: 5px;
+    margin-bottom: 40px;
+}
+
+.comment{
+    position: relative;
+    border: #e8e8e8 solid 1px;
+    padding: 10px;
+    transition: background-color 0.5s;
+}
+
+.comment:hover{
+    background-color: #5C94FB;
+}
+
+.comment-info{
+    padding: 5px;
+}
+
+.comment-title{
+    display: inline;
+    position: absolute;
+    top: 5px;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+span.comment-time {
+    top: 5px;
+    position: absolute;
+    margin: 5px 120px;
+    font-size: 14px;
+    color: gray;
+}
+
+a.comment-reply {
+    top: 10px;
+    position: absolute;
+    right: 5px;
+    color: #5C94FB;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.comment:hover .comment-reply{
+    color: #717172;
+}
+
+.comment-des{
+    margin-left: 80px;
+    top: 30px;
+    position: absolute;
+    color: gray;
+    line-height: 1.4;
+}
+
+/* reply section */
+
+.reply-section{
+    margin-bottom: 80px;
+}
+
+.form-inputs{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-inputs-oneline input {
+    width: calc(488px - 122px);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #e8e8e8;
+    border: 2px solid #e8e8e8; /* Define an initial border */
+    transition: border-color 0.3s ease; /* Add a transition for the border color change */
+    outline: none; /* Remove the default focus outline */
+}
+
+.form-inputs .full-width{
+    width: 74%;
+}
+
+.form-inputs input:focus {
+    border-color: #007bff !important; /* Change border color when input is focused/clicked */
+}
+
+#message {
+    resize: none; /* Prevent resizing by dragging */
+    overflow-y: hidden; /* Hide vertical scroll bar initially */
+    height: 70px; /* Set initial height */
+    width: 100%; /* Set width */
+    padding: 10px; /* Add padding */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border: 2px solid #e8e8e8; /* Define an initial border */
+    transition: border-color 0.3s ease; /* Add a transition for the border color change */
+    outline: none; /* Remove the default focus outline */
+    background-color: #e8e8e8;
+}
+
+#message:focus {
+    border-color: #007bff; /* Change border color when textarea is focused */
+}
+
+.form-btn{
+    background-color: #5C94FB;
+    border: #5C94FB;
+    border-radius: 2px;
+    color: white;
+    margin: auto;
+    display: block;
+    padding: 15px;
+    width: 150px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: opacity 0.5s;
+}
+
+.form-btn:hover{
+    opacity: 0.8;
+}
+
+/* footer section */
+
+.footer{
+    background-color: #1c1d21;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links{
+    list-style: none;
+    margin: 20px 0;
+}
+
+.footer-links li{
+    display: inline-block;
+    transition: opacity 0.5s;
+}
+
+.footer-links li:hover{
+    opacity: 0.8;
+}
+
+.footer-links li a{
+    display: block;
+    color: white;
+    background-color: #5C94FB;
+    height: 50px;
+    width: 50px;
+
+}
+
+.footer-links li a i{
+    line-height: 50px;
+}
+
+
+.footer-des{
+    color: #999;
+    font-size: 15px;
+    text-transform: uppercase;
+}
